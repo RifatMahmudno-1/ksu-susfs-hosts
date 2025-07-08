@@ -1,0 +1,1 @@
+KernelSU (Next) and SuSFS is required to make this module work properly. The main purpose of this module is to create writeable hosts file systemless-ly for AdAway so that it can run properly with KernelSU (Next) and SuSFS.
