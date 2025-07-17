@@ -1,6 +1,6 @@
 id=ksu-susfs-hosts
 name=KSU SuSFS Hosts
-version=v3
-versionCode=3
+version=v4
+versionCode=4
 author=Rifat Mahmud
 description=Systemless Hosts for KSU SuSFS

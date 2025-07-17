@@ -19,10 +19,6 @@ else
     "$SUSFS_BIN" add_try_umount "$system_hostfile" 1
 fi
 
-until [ "$(getprop sys.boot_completed)" = "1" ]; do
-    sleep 1
-done
-
 if [ -w "$system_hostfile" ]; then
     update_description 'Module is working ✅'
 else
