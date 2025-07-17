@@ -9,10 +9,10 @@ update_description() {
 }
 
 if [ "$KSU" != true ] ; then
-    update_description 'KernelSU (Next) is required ❌'
+    update_description '❌ KernelSU (Next) is required.'
     exit 1
 elif [ ! -f "$SUSFS_BIN" ] ; then
-    update_description 'SuSFS is required ❌'
+    update_description '❌ SuSFS is required.'
     exit 1
 else
     mount --bind "$target_hostsfile" "$system_hostfile"
@@ -20,7 +20,7 @@ else
 fi
 
 if [ -w "$system_hostfile" ]; then
-    update_description 'Module is working ✅'
+    update_description '✅ Module is working.'
 else
-    update_description 'Module not working ❌'
+    update_description '❌ Module not working.'
 fi
